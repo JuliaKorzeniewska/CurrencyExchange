@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(280deg, #134611, #b6f094);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.container {
+  background-color: #104911;
+  padding: 10px 24px;
+  border-radius: 20px;
+  width: 490px;
+}
+.container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.logo {
+  text-align: left;
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  color: #ccff33;
+}
+
+h2 {
+  color: #e8fccf;
+  font-family: sans-serif;
+  text-align: right;
+  font-size: 1.2em;
+}
+.container .box {
+  width: 100%;
+  display: flex;
+}
+
+.box div {
+  width: 100%;
+}
+
+select {
+  width: 95%;
+  height: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background: #96e072;
+  outline: none;
+  color: black;
+  margin: 1em 0;
+  padding: 0 1em;
+  border-radius: 10px;
+  border: none;
+}
+
+input {
+  width: 95%;
+  height: 40px;
+  font-size: 1.2em;
+  margin: 1em 0;
+  border-radius: 10px;
+  border: none;
+  background: #cccccc;
+  outline: none;
+  padding: 0 1em;
+}
+label {
+  color: #e8fccf;
+  font-size: 1.2em;
+}
+.pick-currency .amount-currency {
+  margin-bottom: 15px;
+}
+.btn {
+  width: 96%;
+  height: 40px;
+  background: #09814a;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+.result {
+  color: #b6f094;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
