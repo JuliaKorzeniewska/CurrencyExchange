@@ -10,8 +10,6 @@ function convertCurrency() {
     resultDiv.innerHTML = "Wprowadź poprawną kwotę.";
     return;
   }
-
-  // Round the amount to two decimal places
   amount = amount.toFixed(2);
 
   const apiUrl = `https://api.nbp.pl/api/exchangerates/rates/A/${currencyCode}/?format=json`;
@@ -41,7 +39,6 @@ function isDataValid(data) {
   return !!(data?.rates?.length > 0 && data.rates[0].mid);
 }
 
-// Restrict input to two decimal places
 const amountInput = document.getElementById("amount");
 amountInput.addEventListener("input", function () {
   const inputValue = amountInput.value;
