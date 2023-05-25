@@ -1,9 +1,9 @@
 function convertCurrency() {
   const currencySelect = document.getElementById("currency");
-  const amountInput = document.getElementById("amount");
   const resultDiv = document.getElementById("result");
 
   const currencyCode = currencySelect.value;
+  const amountInput = document.getElementById("amount");
   let amount = parseFloat(amountInput.value);
 
   if (amount <= 0 || isNaN(amount)) {
